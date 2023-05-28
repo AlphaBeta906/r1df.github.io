@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>R404DF</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            const videos = [
+                "x-x0KUrkoDI",
+                "CT8t_1JXWn8",
+                "Vk9TXwBB6Xk",
+                "2Q8wKo9f6O0",
+                "ALhAXtFR1LM",
+                "K-b-GdQ41BU",
+                "dCO89JvatxQ",
+                "uM9_ZEWskYE",
+                "1MJ2g7Eb0QE",
+                "hR3ctoLrOHk",
+                "dBv9BMSPaA8",
+                "jXF2mV-KnLE",
+                "HiLKVdNJt_o",
+                "QuKD5btHKek",
+                "B7D2Oq7LDkc",
+                "5UoPqJ0QHnI",
+                "KuuLNZpn-rk"
+            ];
+        </script>
+    </head>
+    <body>
+        <div class="round_wrapper">
+            <p>I don't know what you thought you'd achieve by messing with the URL path, so have a randomly selected video:</p>
+            <iframe id="video_player" width="560" height="315" src="https://www.youtube-nocookie.com/embed/x-x0KUrkoDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <script>
+            const player = document.getElementById("video_player");
+            const randomVideoID = videos[Math.floor(Math.random() * videos.length)];
+            player.src = `https://www.youtube-nocookie.com/embed/${randomVideoID}`;
+        </script>
+    </body>
+</html>

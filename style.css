@@ -1,0 +1,36 @@
+/* Page background */
+body {
+    background-color: black;
+    font-family: "Verdana";
+    color: white;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Links */
+a:link, a:active, a:visited {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+/*  Classes */
+.round_wrapper {
+    text-align: center;
+    justify-content: center;
+    border-color: white;
+    border: 1.5px solid white;
+    border-radius: 1rem;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
