@@ -13,6 +13,10 @@ p {
     margin-bottom: 5px;
 }
 
+span {
+    cursor: default;
+}
+
 /* Links */
 a:link, a:active, a:visited {
     color: white;
