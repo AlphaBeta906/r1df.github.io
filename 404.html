@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>R404DF</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>R1DF - 404 Not Found</title>
+        <link rel="stylesheet" href="site_assets/style.css">
+        <link rel="icon" type="image/x-icon" href="site_assets/favicon.ico">
         <script>
             const videos = [
                 "x-x0KUrkoDI",
@@ -31,6 +31,8 @@
             <p>I don't know what you thought you'd achieve by messing with the URL path, so have a randomly selected video:</p>
             <iframe id="video_player" width="560" height="315" src="https://www.youtube-nocookie.com/embed/x-x0KUrkoDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+
+        <!-- Script below randomizes video-->
         <script>
             const player = document.getElementById("video_player");
             const randomVideoID = videos[Math.floor(Math.random() * videos.length)];
