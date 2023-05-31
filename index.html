@@ -2,51 +2,157 @@
 <html>
     <head>
         <title>R1DF</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="site_assets/style.css">
+        <link rel="icon" type="image/x-icon" href="site_assets/favicon.ico">
     </head>
     <body>
-        <div class="round_wrapper">
-            <p>R1DF</p>
+        <div class="page_section" id="main_page">
+            <div class="round_wrapper">
+                <p>R1DF</p>
+            </div>
+            <br>
+    
+            <div class="round_wrapper">
+                <p>
+                    I'm just some guy who writes code and engages in other bunches of weird stuff while
+                    living in this world.
+                </p>
+                <br>
+    
+                <p>
+                    I know Python and C++ and use PyCharm as my primary IDE. I also know Russian and currently
+                    I'm learning French.
+                </p>
+                <br>
+    
+                <p>
+                    Other than that, I'm also a gamer without a specific preference for any genres.
+                </p>
+                <br>
+    
+                <p>Oh, and I'm a Breaking Bad fan, I guess.</p>
+            </div>
+            <br>
+
+            <div class="round_wrapper">
+                <a id="projects_switch" onclick="show_projects();">Show Projects</a>
+            </div>
+            <br>
+    
+            <div class="round_wrapper">
+                <span>
+                    &#9671;
+                    <a href="https://github.com/R1DF">GitHub</a>
+                    &#9671;
+                    <a href="https://www.duolingo.com/profile/_R1DF">Duolingo</a>
+                    &#9671;
+                    <a href="https://www.reddit.com/user/_r1df">Reddit</a>
+                    &#9671;
+                </span>
+            </div>
         </div>
-        <br>
-
-        <div class="round_wrapper">
-            <p>
-                I'm just some guy who writes code and engages in other bunches of weird stuff while
-                living in this world.
-            </p>
+    
+        <div class="page_section" id="projects_page" style="display: none;">
+            <div class="round_wrapper">
+                <p>Projects</p>
+            </div>
             <br>
 
-            <p>
-                I know Python and C++ and use PyCharm as my primary IDE. I also know Russian and currently
-                I'm learning French.
-            </p>
+            <div class="round_wrapper">
+                <p>
+                    Below is a specific list of projects that I work on. All of my publicly available
+                    projects are available in my GitHub profile, but the ones I like the most are already put below.
+                </p>
+                <br>
+
+                <p>
+                    <abbr title="Reference to Dave Brandt">Not much, but it's honest work.</abbr>
+                </p>
+            </div>
             <br>
 
-            <p>
-                Other than that, I'm also a gamer without a specific preference for any genres.
-            </p>
+            <div class="project_wrapper">
+                <p class="bold">Snakes and Ladders Simulation Engine</p>
+                <p>
+                    Play snakes and ladders right in the terminal with interesting rules and
+                    use packs to theme the game. Originally meant for a history project.
+                </p>
+                <br class="shorten">
+
+                <p>Version: 1.0.0</p>
+                <a class="bold" href="https://github.com/R1DF/Snakes-and-Ladders-Simulation-Engine/releases">Download</a>
+            </div>
             <br>
 
-            <p>You can check out most of my projects on GitHub.</p>
+            <div class="project_wrapper">
+                <p class="bold">The Differentiation Quiz</p>
+                <p>
+                    A little terminal game about the very basics of differential calculus.
+                </p>
+                <p>
+                    Originally meant as an inside joke project to a friend.
+                </p>
+                <br class="shorten">
+
+                <p>Version: 1.0.0</p>
+                <a class="bold" href="https://github.com/R1DF/The-Differentiation-Quiz/releases">Download</a>
+            </div>
             <br>
 
-            <p>Oh, and I'm a Breaking Bad fan, I guess.</p>
+            <div class="project_wrapper">
+                <p class="bold">Protests Simulator 2022</p>
+                <p>
+                    A little terminal game that I made as a CS project about finding water.
+                </p>
+                <p>
+                    Only works on Windows as of now.
+                </p>
+                <br class="shorten">
+                
+                <p>Version: 1.0.0</p>
+                <a class="bold" href="https://github.com/R1DF/Protests-Simulator-2022/releases">Download</a>
+            </div>
+            <br>
+
+            <div class="project_wrapper">
+                <p class="bold">Legacy Snakle</p>
+                <p>
+                    Wordle but downloadable for Windows computers.
+                </p>
+                <p>
+                    Only works on Windows as of now. This project is not maintained anymore.
+                </p>
+                <br class="shorten">
+                
+                <a class="bold" href="https://github.com/R1DF/Legacy-Snakle/releases">Download</a>
+            </div>
+            <br>
+
+            <div class="round_wrapper">
+                <a id="extras_switch" onclick="toggle_extras();">Show Extras</a>
+            </div>
+            <br>
+            
+            <div id="extras_section" style="display: none;">
+                <div class="round_wrapper">
+                    <p class="bold">Online:</p>
+                        <a class="block" href="https://r1df.github.io/Quadratic-Equation-Solver-Online/">Quadratic Equation Solver</a>
+                        <a class="block" href="https://r1df.github.io/Linear-Equation-Solver-Online/">Linear Equation Solver</a>
+                    <br>
+                    <p class="bold">Other:</p>
+                        <a class="block" href="https://github.com/R1DF/Snakle-Pack-Editor/releases">Snakle Pack Editor</a>
+                        <a class="block" href="https://github.com/R1DF/TkSize/releases">TkSize (for Tk uses)</a>
+                        <a class="block" href="https://github.com/R1DF/SendToEmbed/releases">SendToEmbed</a>
+                </div>
+                <br>
+            </div>
+            
+
+            <div class="round_wrapper">
+                <a id="projects_switch" onclick="return_to_main();">Return</a>
+            </div>
         </div>
-        <br>
 
-        <div class="round_wrapper">
-            <span>
-                &#9671;
-                <a href="https://github.com/R1DF">GitHub</a>
-                &#9671;
-                <a href="https://www.duolingo.com/profile/_R1DF">Duolingo</a>
-                &#9671;
-                <a href="https://www.reddit.com/user/_r1df">Reddit</a>
-                &#9671;
-            </span>
-        </div>
-        
+        <script src="site_assets/contents_manager.js"></script>
     </body>
 </html>
