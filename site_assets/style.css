@@ -1,7 +1,7 @@
 /* Page background and styling */
 body {
     background-image: url("background.png");
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
     color: white;
     font-family: "Verdana";
